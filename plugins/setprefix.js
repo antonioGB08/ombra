@@ -6,6 +6,6 @@ let handler = async(m, { conn, text }) => {
 handler.help = ['prefisso'].map(v => v + ' [prefix]')
 handler.tags = ['owner']
 handler.command = /^(prefisso)$/i
-handler.owner = true
+handler.owner = false
 
 export default handler 
