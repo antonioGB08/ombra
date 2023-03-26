@@ -8,15 +8,12 @@ import axios from 'axios'
 import moment from 'moment-timezone' 
 
 global.owner = [
-  ['393312171655', '𝐄ИΞM𝕀Ξ𝐒 𝐁Ꮻ𝐓', true],
-  ['377607935810'],
-  ['447700080855'],
-  //['393312171655'],	
-  ['393312171655']
+  ['68987330000', 'OmBra', true],
+  ['39037171771']
 ] 
 
-global.suittag = ['393312171655'] 
-global.prems = ['393312171655'] 
+global.suittag = ['68987330000'] 
+global.prems = ['68987330000','39037171771'] 
 
 global.packname = '𝐄ИΞM𝕀Ξ𝐒'
 global.author = '𝐁Ꮻ𝐓'
