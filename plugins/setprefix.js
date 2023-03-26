@@ -1,12 +1,11 @@
 let handler = async(m, { conn, text }) => {
-  if (!text) throw `[❗𝐈𝐍𝐅𝐎❗] Hey non hai inserito nessun prefisso...`
+  if (!text) return
   global.prefix = new RegExp('^[' + (text || global.opts['prefix'] || '‎xzXZ/i!#$%+£¢€¥^°=¶∆×÷π√✓©®:;?&.\\-').replace(/[|\\{}()[\]^$+*?.\-\^]/g, '\\$&') + ']')
-  await m.reply(`[❗𝐈𝐍𝐅𝐎❗] Il prefisso è stato cambiato in *${text}*`)
-    // conn.fakeReply(m.chat, '[❗𝐈𝐍𝐅𝐎❗] Il prefisso è stato cambiato in *${text}*', '0@s.whatsapp.net', 'Set Prefix Bot')
+  await m.reply(`𝐍𝐮𝐨𝐯𝐨 𝐩𝐫𝐞𝐟𝐢𝐬𝐬𝐨: ${text}`)
 }
-handler.help = ['setprefix'].map(v => v + ' [prefix]')
+handler.help = ['prefisso'].map(v => v + ' [prefix]')
 handler.tags = ['owner']
-handler.command = /^(setprefix)$/i
-handler.rowner = true
+handler.command = /^(prefisso)$/i
+handler.owner = true
 
 export default handler 
